@@ -250,23 +250,34 @@ h1 a {
   color: white;
 }
 
-.card {
-  display: block;
-  padding: 1rem;
-  border: 3px solid #ddd;
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+.badge-orange {
+  border-radius: 80px;
+  background-color: #ffa600;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: normal;
 }
-.card__title {
-  font-size: 1.5rem;
-  padding-bottom: 1rem;
+
+.breadcrumb {
+  padding: 1em;
+}
+.breadcrumb__list {
+  display: flex;
+  gap: 0.5em;
+}
+.breadcrumb__item {
   font-weight: bold;
 }
-.card__body {
-  font-size: 1rem;
-}
-.card__body a {
+.breadcrumb__item--active {
+  color: red;
   text-decoration: underline;
+}
+.breadcrumb__item::after {
+  content: " /";
+  font-weight: normal;
+}
+.breadcrumb__item:last-child::after {
+  content: none;
 }
 
 .btn {
@@ -403,6 +414,25 @@ h1 a {
   background-color: #c2ff99;
 }
 
+.card {
+  display: block;
+  padding: 1rem;
+  border: 3px solid #ddd;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.card__title {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+.card__body {
+  font-size: 1rem;
+}
+.card__body a {
+  text-decoration: underline;
+}
+
 .navbar .container, .navbar-secondary .container, .navbar-primary .container, .navbar, .navbar-secondary, .navbar-primary {
   width: 100%;
   display: flex;
@@ -424,36 +454,6 @@ h1 a {
 
 .navbar-secondary {
   background-color: red;
-}
-
-.badge-orange {
-  border-radius: 80px;
-  background-color: #ffa600;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
-  font-weight: normal;
-}
-
-.breadcrumb {
-  padding: 1em;
-}
-.breadcrumb__list {
-  display: flex;
-  gap: 0.5em;
-}
-.breadcrumb__item {
-  font-weight: bold;
-}
-.breadcrumb__item--active {
-  color: red;
-  text-decoration: underline;
-}
-.breadcrumb__item::after {
-  content: " /";
-  font-weight: normal;
-}
-.breadcrumb__item:last-child::after {
-  content: none;
 }
 
 .p-0 {

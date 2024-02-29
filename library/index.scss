@@ -11,11 +11,7 @@
 @import "colors";
 
 // components (button, card, navbar)
-@import "components/card";
-@import "components/button";
-@import "components/navbar";
-@import "components/badge";
-@import "components/breadcrumb";
+@import "components/__components";
 
 // utilities (margin, padding, opacity)
 @import "utilities";
