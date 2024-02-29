@@ -27,4 +27,14 @@
       background-color: $value;
     }
   }
+
+  .btn-complement-#{$key} {
+    @include btn($value);
+    color: light-complement($value);
+
+    &:hover {
+      color: $value;
+      background-color: light-complement($value);
+    }
+  }
 }
