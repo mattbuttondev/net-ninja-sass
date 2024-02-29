@@ -1,0 +1,26 @@
+.breadcrumb {
+  padding: 1em;
+
+  &__list {
+    display: flex;
+    gap: 0.5em;
+  }
+
+  &__item {
+    font-weight: bold;
+
+    &--active {
+      color: $secondary;
+      text-decoration: underline;
+    }
+
+    &::after {
+      content: " /";
+      font-weight: normal;
+    }
+
+    &:last-child::after {
+      content: none;
+    }
+  }
+}

@@ -426,6 +426,36 @@ h1 a {
   background-color: red;
 }
 
+.badge-orange {
+  border-radius: 80px;
+  background-color: #ffa600;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.breadcrumb {
+  padding: 1em;
+}
+.breadcrumb__list {
+  display: flex;
+  gap: 0.5em;
+}
+.breadcrumb__item {
+  font-weight: bold;
+}
+.breadcrumb__item--active {
+  color: red;
+  text-decoration: underline;
+}
+.breadcrumb__item::after {
+  content: " /";
+  font-weight: normal;
+}
+.breadcrumb__item:last-child::after {
+  content: none;
+}
+
 .p-0 {
   padding: 0;
 }

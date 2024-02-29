@@ -10,7 +10,7 @@ const buildStyles = () => {
 };
 
 const watchTask = () => {
-  watch(["sass/**/*.scss", "*.html"], buildStyles);
+  watch(["sass/**/*.scss", "library/**/*.scss", "*.html"], buildStyles);
 };
 
 exports.default = series(buildStyles, watchTask);
